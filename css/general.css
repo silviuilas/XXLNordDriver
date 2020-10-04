@@ -10,6 +10,7 @@
 .accent{
   color:rgb(229, 36, 39);
   display: inline-block;
+  text-decoration: none;
 }
 
 .custom-button-1 {

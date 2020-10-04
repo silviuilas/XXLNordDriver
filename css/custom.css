@@ -20,7 +20,7 @@
   left: -35%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0);
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0);
   z-index: 100;
 }
 
@@ -341,6 +341,10 @@ footer .site-logo {
 footer h5 {
   width: 100%;
   font-weight: 700;
+}
+.footer-information a{
+  text-decoration: none;
+  color: white;
 }
 
 .bx-wrapper, .bx-viewport {
