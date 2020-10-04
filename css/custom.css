@@ -1,0 +1,365 @@
+.dropbtn {
+  font-family: Poppins, serif;
+  background-color: rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: black;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  transition: 0.1s;
+  display: none;
+  padding-top: 24px;
+  left: -35%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+  z-index: 100;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.xmpls {
+  display: inline;
+}
+
+.xmpl {
+  display: inline;
+}
+
+.mobile-nav-head {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  width: 100%;
+  filter: brightness(200%);
+  z-index: 100;
+}
+
+.mburger {
+  color: black;
+}
+
+.desktop-nav {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.3s;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.desktop-nav #links-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 20vw;
+  height: 100%;
+}
+
+.desktop-nav .site-logo {
+  transform: scale(1.1);
+}
+
+.desktop-nav a {
+  font-family: Poppins, serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+.desktop-nav a:hover {
+  color: #006170;
+}
+
+.title-background {
+  height: 100vh;
+  background-image: url("../img/big-img.jfif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main-title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-title h1 {
+  font-size: 60px;
+  color: white;
+  text-shadow: 2px 2px black;
+  margin: 0;
+}
+
+.main-title h2 {
+  color: white;
+  text-shadow: 2px 2px black;
+  margin: 0;
+  font-size: 40px;
+}
+
+.about-us-summary-background {
+  background-image: url("../img/background-car.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.about-us-summary {
+  margin: 25vh 7vw;
+  text-align: left;
+}
+
+.about-us-summary h2 {
+  color: rgb(38, 47, 77);
+}
+
+#why-us {
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px black;
+  margin-top: 0;
+}
+
+
+.why-us-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: white;
+  margin: 30px 5vw;
+  border-radius: 5px;
+}
+
+.why-us-summary-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 10px;
+}
+
+.why-us-summary-box:hover {
+  color: rgb(229, 36, 39);
+}
+
+.why-us-summary-box-title {
+  font-size: 30px;
+}
+
+.why-us-summary-box-description {
+  font-size: 20px;
+}
+
+.services-wrapper {
+  margin-top: 40px;
+}
+
+.services-title-filtre{
+  background-color: rgba(229, 36, 39,0.8);
+}
+
+.services-title {
+  font-size: clamp(20px,5vw,40px);
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url("../img/tehnologi.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.service-box-all-text {
+  width: clamp(400px, 50vw, 1000px);
+  margin: 0 auto;
+}
+
+.service-box-title {
+  color: rgb(38, 47, 77);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.service-box-img{
+  margin: 0 auto;
+  width: min(500px,100vw);
+}
+
+.service-box-text {
+  color: rgb(229, 36, 39);
+}
+
+.contact-us-main {
+  background-color: rgb(237, 235, 232);
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.contact-us-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contact-us-information {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-us-information .title {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(38, 47, 77)
+}
+
+.contact-us-information .requirements h3 {
+  margin: 0;
+}
+
+.contact-us-information .requirements h4 {
+  margin: 0;
+}
+
+.contact-us-information .contact h3 {
+  margin: 0;
+}
+
+.contact-us-information .contact {
+  margin-bottom: 20px;
+}
+
+
+.contact-us-background {
+  height: 30vh;
+  margin: 10vh 0;
+  background-image: url("../img/background-green.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-us-filter {
+  #background-color: rgba(229, 36, 39, 0.5);
+  height: 100%;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+}
+
+.contact-us h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 2px 2px gray;
+}
+
+
+footer {
+  background-color: #1a1a1a;
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+}
+
+.footer-information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 10vw;
+}
+
+.footer-information #wrapper-footer-logo {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+
+footer .site-logo {
+  transform: scale(1.4);
+}
+
+footer h5 {
+  width: 100%;
+  font-weight: 700;
+}
+
+.bx-wrapper, .bx-viewport {
+  max-width: 100% !important;
+}
+
+.slider-logos-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-logos-wrapper h2 {
+  font-size: 40px;
+}
+
+.slider-img img {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}
