@@ -7,6 +7,11 @@
   font-weight: 700;
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+}
+
 .accent{
   color:rgb(229, 36, 39);
   display: inline-block;
