@@ -175,6 +175,12 @@
   color: rgb(229, 36, 39);
 }
 
+@media only screen and (max-width: 1000px) {
+  .why-us-summary-box:hover {
+    color: black;
+  }
+}
+
 .why-us-summary-box-title {
   font-size: 30px;
 }
@@ -251,7 +257,6 @@
 .contact-us-main {
   background-color: rgb(237, 235, 232);
   margin-top: 70px;
-  margin-bottom: 70px;
 }
 
 .contact-us-box {
@@ -263,7 +268,7 @@
 }
 
 .contact-us-information {
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -385,8 +390,7 @@ input[type=text], select, textarea {
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
+  margin-bottom: 10px;
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
@@ -394,7 +398,7 @@ input[type=text], select, textarea {
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
-  padding: 12px 20px;
+  padding: 15px 30px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -408,8 +412,14 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .container-online-registration {
   border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  max-width: 600px;
-  margin-top:50px;
+  background-color: rgb(237, 235, 232);;
+  padding-bottom: 15px;
+  max-width: 500px;
 }
+
+.online-registration-title{
+  font-size: max(30px,3vw);
+  color: rgb(38, 47, 77);
+}
+
+
