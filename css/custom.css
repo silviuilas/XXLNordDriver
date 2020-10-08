@@ -115,7 +115,7 @@
 }
 
 .main-title h1 {
-  font-size: clamp(40px,10vw,60px);
+  font-size: clamp(40px, 10vw, 60px);
   color: white;
   text-shadow: 2px 2px black;
   margin: 0;
@@ -125,7 +125,7 @@
   color: white;
   text-shadow: 2px 2px black;
   margin: 0;
-  font-size: clamp(30px,8vw, 40px);
+  font-size: clamp(30px, 8vw, 40px);
 }
 
 .about-us-summary-background {
@@ -193,12 +193,12 @@
   margin-top: 40px;
 }
 
-.services-title-filter{
-  background-color: rgba(229, 36, 39,0.8);
+.services-title-filter {
+  background-color: rgba(229, 36, 39, 0.8);
 }
 
 .services-title {
-  font-size: clamp(30px,5vw,40px);
+  font-size: clamp(30px, 5vw, 40px);
   font-weight: bold;
   color: white;
   margin-top: 20px;
@@ -236,16 +236,17 @@
   font-weight: bold;
 }
 
-.service-box-img{
+.service-box-img {
   margin: 0 auto;
   width: 48vw;
 }
 
-@media only screen and (max-width: 700px){
-  .service-box-img{
+@media only screen and (max-width: 700px) {
+  .service-box-img {
     width: 100vw;
   }
-  .service-box-all-text{
+
+  .service-box-all-text {
     width: 100vw;
   }
 }
@@ -321,7 +322,7 @@
 
 .contact-us h2 {
   color: white;
-  font-size: clamp(27px,4vw,40px);
+  font-size: clamp(27px, 4vw, 40px);
   font-weight: 700;
   text-shadow: 2px 2px gray;
 }
@@ -356,7 +357,8 @@ footer h5 {
   width: 100%;
   font-weight: 700;
 }
-.footer-information a{
+
+.footer-information a {
   text-decoration: none;
   color: white;
 }
@@ -394,6 +396,17 @@ input[type=text], select, textarea {
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+.half-column-on-desktop{
+  display: inline-block;
+  width: 49%;
+}
+
+@media only screen and (max-width: 1000px){
+  .half-column-on-desktop{
+    width: 100%;
+  }
+}
+
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: #4CAF50;
@@ -412,13 +425,13 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .container-online-registration {
   border-radius: 5px;
-  background-color: rgb(237, 235, 232);;
+  background-color: rgb(237, 235, 232);
   padding-bottom: 15px;
   max-width: 500px;
 }
 
-.online-registration-title{
-  font-size: max(30px,3vw);
+.online-registration-title {
+  font-size: max(30px, 3vw);
   color: rgb(38, 47, 77);
 }
 
