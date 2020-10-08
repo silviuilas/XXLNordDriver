@@ -1,7 +1,5 @@
 <?php
 
-include ('index_main.html');
-
 if($_SERVER["REQUEST_METHOD"] == "POST") {
   $fname=$_POST["firstname"];
   $lname=$_POST['lastname'];
@@ -18,5 +16,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if(!mail("xxlnorddriver@gmail.com",$subject,$msg,$from)){
     var_dump(error_get_last()['message']);
+    include('404.html');
+  }
+  else{
+    include ('html/submited_form.html');
   }
 }
