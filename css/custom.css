@@ -310,6 +310,9 @@
   color:white;
 }
 
+.whatsapp-move-back {
+  transform: translateX(-23px);
+}
 .whatsapp-img{
   position:relative;
   z-index: 1000;

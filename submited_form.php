@@ -1,8 +1,9 @@
 <?php
-function checkUserCaptcha($userToken)
-{
+function checkUserCaptcha($userToken){
+  $ini_configuration = parse_ini_file("configurations.ini",true);
+
   $url = 'https://www.google.com/recaptcha/api/siteverify';
-  $data = array('secret' => '6LdT19UZAAAAAHldGtRqX8X-MvXEV8MSdGMpzB7D',
+  $data = array('secret' => $ini_configuration['recaptcha_key']['secret'],
     'response' => $userToken);
 
 // use key 'http' even if you send the request to https://...
