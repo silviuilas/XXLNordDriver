@@ -298,6 +298,22 @@
   margin-bottom: 20px;
 }
 
+.whatsapp-number-box {
+  position:relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 20px 5px 10px;
+  font-size: 16px;
+  transform: translateX(23px);
+  border-radius: 10px;
+  background-color: rgb(43, 174, 27);
+  color:white;
+}
+
+.whatsapp-img{
+  position:relative;
+  z-index: 1000;
+}
 
 .contact-us-background {
   height: 30vh;

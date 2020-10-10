@@ -22,7 +22,7 @@
 }
 
 .custom-button-1 {
-  background-color: rgb(229, 36, 39);
+  background-color:  #006170;;
   color: white;
 }
 
@@ -42,6 +42,10 @@
   background-color: #282f42;
 }
 
+.grecaptcha-badge {
+  display: none !important;
+  visibility: hidden !important;
+}
 @media screen and (max-width: 1000px) {
   .hide-on-mobile {
     display: none;

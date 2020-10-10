@@ -203,9 +203,6 @@
     </div>
   </div>
 </div>
-<div class="center">
-
-</div>
 <div class="contact-us-main" id="contact-us">
   <div class="contact-us-box" data-aos="fade-in">
     <div class="container-online-registration" id="online-registration">
@@ -213,11 +210,6 @@
         Înscrieri online
       </div>
       <form method="post" action="submited_form.php" id="submit-registration">
-        <div class="g-recaptcha"
-             data-sitekey="6Lfjw9UZAAAAALElWfIcQKPCJfyg7IgOIrBjiZjs"
-             data-callback="onSubmit"
-             data-size="invisible">
-        </div>
         <div class="half-column-on-desktop">
           <label for="fname">Nume</label>
           <input type="text" id="fname" name="firstname" placeholder="Popescu" required>
@@ -228,14 +220,12 @@
         </div>
         <label for="phone">Numar De Telefon</label>
         <input type="text" id="phone" name="phonenumber" placeholder="07XXXXXXXX" required>
-
         <div class="half-column-on-desktop">
           <label for="category">Categorie</label>
           <select id="category" name="category">
             <option value="B">B</option>
           </select>
         </div>
-
         <div class="half-column-on-desktop">
           <label for="type">Transmisie</label>
           <select id="type" name="type">
@@ -243,10 +233,13 @@
             <option value="automata">Automata</option>
           </select>
         </div>
-
         <label for="details">Detalii</label>
         <textarea id="details" name="details" placeholder="Doresti sa mai adaugi ceva?" style="height:100px"></textarea>
-        <input type="submit" value="Trimite">
+        <button class="g-recaptcha custom-button-1"
+                data-sitekey="6LdT19UZAAAAAEB_umN6wRZ2aRYpeEBhMstkbNFJ"
+                data-callback='onSubmit'
+                data-action='submit'>Înscriete!
+        </button>
       </form>
     </div>
     <div class="contact-us-information">
@@ -260,13 +253,13 @@
         <h4>- Copie după buletin/carte de identitate</h4>
       </div>
       <div class="contact">
-        <a
+        <h3>Whatsapp: <a
           href="https://wa.me/+40742305974?text=Bună%20ziua!%20Aș%20dori%20să%20mă%20înscriu%20la%20școala%20dumneavoastră%20de%20șoferi."
           class="accent">
-          <h3>Whatsapp:
-            <img src="img/whatsapp.png" height="30" alt="Apasa aici!" loading="lazy">
-          </h3>
+          <div class="whatsapp-number-box">0742305974</div>
+          <img src="img/whatsapp.png" height="30" alt="Apasa aici!" loading="lazy" class="whatsapp-img">
         </a>
+        </h3>
         <h3>Telefon:
           <a href="tel:0742305974" class="accent">0742305974</a>
           <img src="img/phone.svg" height="15" alt="">
@@ -327,12 +320,13 @@
 
 
 <script defer src="https://www.google-analytics.com/analytics.js" async></script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
   function onSubmit(token) {
-    document.getElementById("submit-registration").submit();
+    let form = document.getElementById("submit-registration");
+    if (form.reportValidity() && form.checkValidity())
+      form.submit();
   }
-  grecaptcha.execute();
 </script>
 <script src="helpers/aos-master/aos.js"></script>
 <script>
