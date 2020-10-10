@@ -431,6 +431,12 @@ input[type=submit]:hover {
   max-width: 500px;
 }
 
+@media only screen and (max-width: 850px) {
+  .container-online-registration{
+    padding-bottom: 100px;
+    padding-top: 20px;
+  }
+}
 .online-registration-title {
   font-size: max(30px, 3vw);
   color: rgb(38, 47, 77);
